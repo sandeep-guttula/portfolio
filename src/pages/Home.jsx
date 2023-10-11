@@ -1,4 +1,4 @@
-// import bgsvg from "../assets/backgroundBlurs.svg";
+import bgsvg from "../assets/backgroundBlurs.svg";
 const Home = () => {
   const angle = ">";
   const text = [
@@ -9,15 +9,19 @@ const Home = () => {
 
   return (
     <div className="font-fira h-[92%]">
-      {/* <img src={bgsvg} alt="" className="fill-[#43D9AD] blur-sm opacity-40 " /> */}
+      <img
+        src={bgsvg}
+        alt=""
+        className="fill-[#43D9AD] blur-sm opacity-40 absolute top-0 left-0 w-full h-full"
+      />
       <div className="h-full">
         <div className="left h-full flex flex-col justify-evenly items-center w-full lg:w-[50%] ">
           <div className=" h-full flex flex-col justify-evenly items-center">
-            <div className=" w-max flex flex-col justify-center">
-              <span className="text-textWhite font-normal text-base">
+            <div className=" w-max flex gap-3 flex-col justify-center">
+              <span className="text-textWhite font-normal text-base ">
                 Hi all. I am
               </span>
-              <h1 className="text-textWhite font-normal text-6xl">
+              <h1 className="text-textWhite font-normal text-5xl lg:text-6xl">
                 Sandeep{" "}
                 <span className="lg:hidden">
                   <br />
